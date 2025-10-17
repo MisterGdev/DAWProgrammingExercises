@@ -1,0 +1,11 @@
+package examenProgramacion;
+
+public class Teclado {
+	
+	private final boolean esInalambrico;
+	private boolean estaEstropeado;
+	
+	public Teclado(boolean esInalambrico) {
+		
+	}
+}

@@ -1,0 +1,24 @@
+package vehiculos;
+
+public class Coche {
+	
+	private int velocidad;
+	private Motor unMotor;
+	
+	
+	
+	public Coche() {
+		velocidad = 0;
+		unMotor = new Motor();
+	}
+
+	public void acelerar(int kmh) {
+		velocidad = velocidad +kmh;
+		unMotor.subirRevoluciones(kmh * 20);
+	}
+	
+	public void frenar(int kmh) {
+		velocidad = velocidad - kmh;
+		unMotor.bajarRevoluciones(kmh * 20);
+	}
+}

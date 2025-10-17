@@ -1,0 +1,36 @@
+package maquinas;
+
+import java.util.Scanner; //Hace que pueda utilizar el Scanner.
+
+public class Aplicacion {
+	
+	public Aplicacion() {
+		Scanner teclado = new Scanner(System.in); //Define el Scanner
+		int maximoRefrescos, maximoGominolas;
+		
+		System.out.println("¿Máximo de refrescos en la máquina?");
+		maximoRefrescos = teclado.nextInt(); //Lee y asigna el valor que hemos introducido como usuario.
+		
+		System.out.println("¿Máximo de gominolas en la máquina?");
+		maximoGominolas = teclado.nextInt(); //Lee y asigna el valor que hemos introducido como usuario.
+		
+		
+		MaquinaVending maquina1 = new MaquinaVending(maximoRefrescos,maximoGominolas);
+		
+		Scanner teclado = new Scanner(System.in);
+		int refrescosComprados;
+		System.out.println("¿Cuántos refrescos quieres comprar?");
+		refrescosComprados = teclado.nextInt();
+		//maquina1.comprarGominolas(3);
+		maquina1.comprarRefrescos();
+		//maquina1.rellenarGominolas(1);
+		//maquina1.comprarGominolas(10);
+		//maquina1.comprarRefrescos(10);
+		//maquina1.rellenarMaquinaEntera(1,1);
+	}
+
+	public static void main(String[] args) {
+		Aplicacion miAplicacion = new Aplicacion();
+
+	}
+}

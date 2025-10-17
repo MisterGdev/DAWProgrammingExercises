@@ -1,0 +1,17 @@
+package examenProgramacion;
+
+public class Aplicacion {
+	
+	private Informatico unInformatico;
+	public Aplicacion( ) {
+		Informatico unInformatico = new Informatico();
+		unInformatico.arreglarEquipo();
+		unInformatico.cambiarMonitor(50);
+		unInformatico.toStringM();
+	}
+	
+	
+	public static void main(String[] args) {
+		Aplicacion unaApp = new Aplicacion();
+	}
+}

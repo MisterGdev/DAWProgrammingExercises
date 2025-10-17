@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+		<section name="NewWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="466"/>
+			<item key="DIALOG_Y_ORIGIN" value="136"/>
+			<item key="DIALOG_WIDTH" value="525"/>
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.ZipFile"/>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<section name="ImportExportWizard.dialogBounds">
+		</section>
+	</section>
+	<section name="ZipFileExportWizard">
+		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
+		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
+		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\adrian.rodriguez\OneDrive - Consejería de Educación\1ºDAW ADRI\Programación\Workspace\comprimidoExamen1.zip"/>
+			<item value="C:\Users\adrian.rodriguez\OneDrive - Consejería de Educación\1ºDAW ADRI\Programación\Workspace\comprimidoLavanderia.zip"/>
+		</list>
+		<section name="ZipFileExportWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="466"/>
+			<item key="DIALOG_Y_ORIGIN" value="101"/>
+			<item key="DIALOG_WIDTH" value="623"/>
+			<item key="DIALOG_HEIGHT" value="622"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="org.eclipse.ui.preferences.keysPreferencePage">
+	</section>
+	<section name="WorkbenchPreferenceDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="260"/>
+		<item key="DIALOG_Y_ORIGIN" value="8"/>
+		<item key="DIALOG_WIDTH" value="936"/>
+		<item key="DIALOG_HEIGHT" value="771"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_WIDTH" value="450"/>
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_HEIGHT" value="506"/>
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
+		<list key="orderedElements">
+		</list>
+		<list key="orderedProviders">
+		</list>
+		<list key="textEntries">
+		</list>
+		<list key="textArray">
+		</list>
+	</section>
+</section>

@@ -1,0 +1,13 @@
+package examenProgramacion;
+
+public class Equipo {
+	
+	private Teclado unTeclado;
+	private Monitor unMonitor;
+	
+	public Equipo() {
+		this.unTeclado = new Teclado(true);
+		this.unMonitor = new Monitor();
+		System.out.println("Se ha creado un equipo con " + this.unTeclado + " y " + this.unMonitor);
+	}
+}

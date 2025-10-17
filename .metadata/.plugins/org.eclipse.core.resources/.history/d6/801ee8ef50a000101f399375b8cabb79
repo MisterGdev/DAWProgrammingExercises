@@ -1,0 +1,22 @@
+package vehiculos;
+
+public class Motor {
+	
+	private int rpm;
+	
+	public Motor() {
+		rpm = 0;
+	}
+	
+	public void subirRevoluciones(int revoluciones) {
+		rpm = rpm + revoluciones; //rpm += revoluciones
+	}
+
+	public void bajarRevoluciones(int revoluciones) {
+		rpm = rpm - revoluciones;
+	}
+	
+	public int getRevoluciones() {
+		return rpm;
+	}
+}

@@ -1,0 +1,21 @@
+package examenProgramacion;
+
+public class Equipo {
+	
+	private Teclado unTeclado;
+	private Monitor unMonitor;
+	
+	public Equipo() {
+		this.unTeclado = new Teclado(true);
+		this.unMonitor = new Monitor(32);
+		System.out.println("Se ha creado un equipo con " + this.unTeclado + " y " + this.unMonitor);
+	}
+	
+	public void cambiarTecladoConCable() {
+		Teclado TecladoCable = new Teclado(false);
+	}
+	
+	public void cambiarTecladoInalambrico() {
+		Teclado TecladoInalambrico = new Teclado(false);
+	}
+}

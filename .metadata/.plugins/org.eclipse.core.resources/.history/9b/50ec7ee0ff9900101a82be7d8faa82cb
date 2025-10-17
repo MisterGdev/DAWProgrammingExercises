@@ -1,0 +1,30 @@
+package Clases;
+
+public class Partida {
+	
+	public Partida() {
+		Jugador jugador1 = new Jugador("Harry");
+		jugador1.mostrarEstado();
+		
+		Jugador jugador2 = new Jugador("Hermione");
+		jugador2.mostrarEstado();
+		
+		jugador1.atacar(jugador2, 10);
+		
+		jugador1.mostrarEstado();
+		jugador2.mostrarEstado();
+		
+		jugador2.atacar(jugador1, 10);
+		
+		jugador1.mostrarEstado();
+		jugador2.mostrarEstado();
+		
+		jugador1.atacar(jugador2, 10);
+		jugador2.defender(jugador2, 10);
+	}
+
+	public static void main(String[] args) {
+		Partida unaPartida = new Partida();
+	}
+
+}

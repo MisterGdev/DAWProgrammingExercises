@@ -1,0 +1,31 @@
+package Clases;
+
+public class Jugador{
+	
+	private String nombreJugador;
+	private int puntosDeVida;
+	private int puntosDeMagia;
+	//atributos
+	
+	public Jugador (String nombreJugador) {
+		this.nombreJugador = nombreJugador;
+		this.puntosDeMagia = 100;
+		this.puntosDeVida = 100;
+	}
+	
+	public void mostrarEstado() {
+		System.out.println("Jugador: " + nombreJugador + " | Vida: " + puntosDeVida + " | Magia: " + puntosDeMagia);	
+	}
+	
+	public void atacar(Jugador jugador2, int puntosDeAtaque) {
+		jugador2.puntosDeVida = jugador2.puntosDeVida - puntosDeAtaque;
+		puntosDeMagia = puntosDeMagia - (puntosDeAtaque/3);
+		System.out.println(jugador2.nombreJugador + " ha sido atacado");
+		
+	}
+	public void defender(Jugador jugador2, int puntosDeDefensa) {
+		jugador2.puntosDeVida = jugador2.puntosDeVida + puntosDeDefensa;
+		puntosDeMagia = puntosDeMagia - (puntosDeDefensa/2);
+		System.out.println(jugador2.nombreJugador + "se ha defendido");
+	}
+}

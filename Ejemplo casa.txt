@@ -1,0 +1,10 @@
+Clases "aplicacion"(main)
+
+maquinaVending
+-numlatas
+
+maquinavending(numlatas)
+
+vender(numlatas)
+
+restar inventario

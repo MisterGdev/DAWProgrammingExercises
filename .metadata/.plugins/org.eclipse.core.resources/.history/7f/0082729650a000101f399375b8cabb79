@@ -1,0 +1,43 @@
+package vehiculos;
+
+import java.util.Scanner;
+
+public class Aplicacion {
+
+	public Aplicacion() {
+		
+		System.out.println("¡Bienvenido al configurador de vehiculos! "); //Inicia el programa
+		
+		//System.out.println("Vamos a crear tu primer coche, ¿como quieres llamarlo? ");
+		
+		Coche coche1 = new Coche(); //Crea un objeto de la clase coche
+		
+		
+		System.out.println("¡Enhorabuena! Tu primer coche ha sido creado con éxito"); //Informa de que lo ha creado
+		
+		System.out.println("¿Cuantos Km/h quieres que acelere tu coche?");
+		
+		Scanner teclado = new Scanner(System.in); //Define teclado
+		int kmh; //Define el tipo de parámetro y el nombre
+		kmh = teclado.nextInt(); //Le dice que el parámetro que hemos descrito antes será = a lo que el usuario ponga (tipo entero)
+		
+		coche1.acelerar(kmh); //Llama a acelerar ese coche.
+		
+		System.out.println("Tu coche ha acelerado, su velocidad actual es de: " + coche1.getVelocidad() ); //Informa de coche1.acelerar.
+		
+		
+		System.out.println("¿Cuántos Km/h quieres que reduzca tu coche?");
+		
+		kmh = teclado.nextInt();
+		coche1.frenar(kmh);
+		
+		System.out.println("Tu coche ha frenado, su velocidad actual es de: " + coche1.getVelocidad() );
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		Aplicacion miAplicacion = new Aplicacion();
+	}
+}
+

@@ -1,0 +1,13 @@
+package examenProgramacion;
+
+public class Equipo {
+	
+	private Teclado unTeclado;
+	private Monitor unMonitor;
+	
+	public Equipo() {
+		this.unTeclado = new Teclado();
+		this.unMonitor = new Monitor();
+		
+	}
+}

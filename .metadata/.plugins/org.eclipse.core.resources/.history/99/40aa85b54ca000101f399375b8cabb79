@@ -1,0 +1,18 @@
+package vehiculos;
+
+import java.util.Scanner;
+
+public class Aplicacion {
+
+	public Aplicacion() {
+		Scanner teclado = new Scanner(System.in);
+		int velocidad;
+		
+		System.out.println("¡Bienvenido al configurador de vehiculos! ");
+		
+		Coche coche1 = new Coche();
+		
+		System.out.println("");
+		
+	}
+}

@@ -1,0 +1,6 @@
+package examenProgramacion;
+
+public class Teclado {
+	private final boolean esInalambrico;
+	
+}

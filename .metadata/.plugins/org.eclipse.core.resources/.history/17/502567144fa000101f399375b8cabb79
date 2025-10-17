@@ -1,0 +1,31 @@
+package vehiculos;
+
+import java.util.Scanner;
+
+public class Aplicacion {
+
+	public Aplicacion() {
+		
+		System.out.println("¡Bienvenido al configurador de vehiculos! ");
+		
+		//System.out.println("Vamos a crear tu primer coche, ¿como quieres llamarlo? ");
+		Coche coche1 = new Coche();
+		
+		
+		System.out.println("¡Enhorabuena! Tu primer coche ha sido creado con éxito");
+		
+		System.out.println("¿Cuanto quieres que acelere tu coche?");
+		Scanner teclado = new Scanner(System.in);
+		int kmh;
+		kmh = teclado.nextInt();
+		
+		coche1.acelerar(kmh);
+		
+		System.out.println("Tu coche ha acelerado, su velocidad es de: " + velocidad);
+	}
+	
+	public static void main(String[] args) {
+		Aplicacion miAplicacion = new Aplicacion();
+	}
+}
+

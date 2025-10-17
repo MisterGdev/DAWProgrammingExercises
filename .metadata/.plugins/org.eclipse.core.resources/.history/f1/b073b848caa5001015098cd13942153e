@@ -1,0 +1,14 @@
+package examenProgramacion;
+
+public class Monitor {
+	
+	private final int numeroPulgadas;
+	private boolean estaEstropeado;
+	
+	public Monitor(int numeroPulgadas) {
+		this.numeroPulgadas = numeroPulgadas;
+		estaEstropeado = false;
+		System.out.println("Se ha creado un Monitor.");
+	}
+	
+}

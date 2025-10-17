@@ -1,0 +1,39 @@
+package examenProgramacion;
+
+public class Equipo {
+	
+	private Teclado unTeclado;
+	private Monitor unMonitor;
+	
+	public Equipo() {
+		this.unTeclado = new Teclado(true);
+		this.unMonitor = new Monitor(32);
+		System.out.println("Se ha creado un equipo.");
+	}
+	
+	public void cambiarTecladoConCable() {
+		Teclado TecladoCable = new Teclado(false);
+		System.out.println("Has cambiado el teclado por uno con cable."); //Cambiar teclado por uno con cable
+	}
+	
+	public void cambiarTecladoInalambrico() {
+		Teclado TecladoInalambrico = new Teclado(true);
+		System.out.println("Has cambiado el teclado por uno inalambrico."); //Cambiar teclado por uno inalambrico.
+	}
+	
+	public void cambiarMonitorG() {
+		Monitor MonitorG = new Monitor(50); //Cambiar a un monitor mas grande.
+		System.out.println("Has cambiado el monitor por uno más grande.");
+	}
+	
+	public void cambiarMonitorP() {
+		Monitor MonitorP = new Monitor(50); //Cambiar a un monitor mas pequeño.
+		System.out.println("Has cambiado el monitor por uno más pequenio.");
+	}
+	
+	public void arreglarEquipo() {
+		unTeclado.setEstaEstropeado(false);
+		unMonitor.setEstaEstropeado(false);
+		System.out.println("Has arreglado el equipo, ahora el teclado y la pantalla funcionan correctamente.");
+	}
+}

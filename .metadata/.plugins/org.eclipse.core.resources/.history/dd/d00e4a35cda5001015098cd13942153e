@@ -1,0 +1,14 @@
+package examenProgramacion;
+
+public class Aplicacion {
+	
+	private Informatico unInformatico;
+	public Aplicacion( ) {
+		Equipo unEquipo = new Equipo();
+	}
+	
+	
+	public static void main(String[] args) {
+		Aplicacion unaApp = new Aplicacion();
+	}
+}

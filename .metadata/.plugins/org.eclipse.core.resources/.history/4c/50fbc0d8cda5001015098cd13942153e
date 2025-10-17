@@ -1,0 +1,9 @@
+package examenProgramacion;
+
+public class Informatico {
+	private Equipo unEquipo;
+	
+	public Informatico() {
+		this.unEquipo = new Equipo();
+	}
+}
