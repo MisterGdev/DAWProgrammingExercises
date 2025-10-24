@@ -1,6 +1,0 @@
-package examenProgramacion;
-
-public class Monitor {
-	private final int numeroPulgadas;
-	
-}
