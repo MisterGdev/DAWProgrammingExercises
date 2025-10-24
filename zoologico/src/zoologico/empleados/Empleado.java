@@ -4,7 +4,8 @@ public abstract class Empleado {
 
 	protected String nombreEmpleado;
 	
-	public Empleado() {
+	protected Empleado(String nombreEmpleado) {
+		this.nombreEmpleado = nombreEmpleado;
 		System.out.println("Se crea un Empleado.");
 	}
 }
