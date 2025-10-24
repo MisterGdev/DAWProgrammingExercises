@@ -10,7 +10,7 @@ public final class Cuidador extends Empleado {
 	private Salmon unSalmon;
 	*/
 	public Cuidador(String nombre) {
-		super();
+		super(nombre);
 	}
 	
 	public void alimentarPerro(Perro unPerro) {

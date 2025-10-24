@@ -1,13 +1,21 @@
 package zoologico.empleados;
 
+import zoologico.animales.*;
+import zoologico.instalaciones.*;
+
 public final class Limpiador extends Empleado {
 	
-	protected Limpiador() {
+	public Limpiador(String nombre) {
 		
-		this.nombreEmpleado = "Mario";
+		super(nombre);
 	}
 	
-	public void limpiar() {
-		System.out.println("El limpiador ha limpiado la instalación.");
+	public void limpiarInstalacion(Instalacion unaInstalacion) {
+		unaInstalacion.setEstaLimpio(true);
+		System.out.println(nombreEmpleado + " ha limpiado " + nombreInstalacion);
+	}
+	
+	public void limpiarAnimal(Animal unAnimal) {
+		unAnimal.setestaSucio(false);
 	}
 }

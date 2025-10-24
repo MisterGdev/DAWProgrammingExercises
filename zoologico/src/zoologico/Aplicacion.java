@@ -11,6 +11,8 @@ public class Aplicacion {
 		//SCANNERS
 		Scanner nombre = new Scanner(System.in);
 		String nombreAnimal;
+		String nombreEmpleado;
+		String nombreInstalacion;
 		
 		Scanner parcela = new Scanner(System.in);
 		int parcelaAsignada;
@@ -61,14 +63,31 @@ public class Aplicacion {
 		
 		//CREAR INSTALACIONES (PARQUE)
 		System.out.println("¡Enhorabuena! Ya tienes a tus animales creados, ahora necesitas unos recintos para que vivan.");
-		System.out.println("Empecemos creando un PARQUE para perros. Introduce la parcela en la que quieres crearlo: |1|2|3|4|");
+		System.out.println("Empecemos creando un PARQUE para perros, ¿cómo quieres llamar al recinto?");
+		nombreInstalacion = nombre.next();
+		System.out.println("Introduce la parcela en la que quieres crearlo: |1|2|3|4|");
 		parcelaAsignada = parcela.nextInt();
 		System.out.println("¿Cuantos metros cuadrados ocupa el parque?");
 		metrosInstalacion = metros.nextInt();
-		Parque unParque = new Parque(parcelaAsignada, metrosInstalacion);
+		Parque unParque = new Parque(nombreInstalacion,parcelaAsignada, metrosInstalacion);
 		System.out.println(unParque.toString()); //Imprime la descripción de Parque.
 		
 		System.out.println(); //Linea en blanco.
+		
+		//CREAR CUIDADOR
+		System.out.println("Pasemos a crear a tus empleados: Cuidadores y Limpiadores. ");
+		System.out.println("¿Cuál será el nombre de tu primer cuidador?");
+		nombreEmpleado = nombre.next(); 
+		Cuidador unCuidador = new Cuidador(nombreEmpleado);
+		System.out.println("Se ha creado al cuidador " + nombreEmpleado);
+		
+		System.out.println(); //Linea en blanco.
+		
+		System.out.println("¿Y el de tu primer limpiador?");
+		nombreEmpleado = nombre.next(); 
+		Limpiador unLimpiador = new Limpiador(nombreEmpleado);
+		System.out.println("Se ha creado al limpiador " + nombreEmpleado);
+		unLimpiador.limpiarInstalacion(unParque);
 	}
 	
 	public static void main(String[] args) {
