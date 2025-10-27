@@ -19,9 +19,5 @@ public final class Parque extends Instalacion {
 		descripcion += "Capacidad: 5 animales.";
 		return descripcion;
 	}
-
-	public String getNombreParque() {
-		return nombreParque;
-	}
 }
 
