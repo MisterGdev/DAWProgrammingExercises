@@ -80,13 +80,17 @@ public class Aplicacion {
 		nombreEmpleado = nombre.next(); 
 		Cuidador unCuidador = new Cuidador(nombreEmpleado);
 		System.out.println("Se ha creado al cuidador " + nombreEmpleado);
+		System.out.println("Ahora vamos a alimentar a un animal:"); 
+		unCuidador.alimentarAnimal(unSalmon);
 		
 		System.out.println(); //Linea en blanco.
 		
+		//CREAR LIMPIADOR
 		System.out.println("¿Y el de tu primer limpiador?");
 		nombreEmpleado = nombre.next(); 
 		Limpiador unLimpiador = new Limpiador(nombreEmpleado);
 		System.out.println("Se ha creado al limpiador " + nombreEmpleado);
+		System.out.println("Vamos a limpiar un Parque:");
 		unLimpiador.limpiarInstalacion(unParque);
 	}
 	
