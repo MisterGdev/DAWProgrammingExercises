@@ -1,6 +1,6 @@
 package zoologico.animales;
 
-public final class Salmon extends Pez {
+public final class Salmon extends Pez implements Oviparo {
 	
 	protected String nombre;
 	public boolean tieneHambre;
@@ -10,6 +10,11 @@ public final class Salmon extends Pez {
 		this.nombre = nombre;
 		this.tieneHambre = true;
 		System.out.println("Se ha creado un Salmon.");
+	}
+	
+	@Override
+	public void ponerHuevos(int numHuevos) {
+		System.out.println("Un salmón pone huevos");
 	}
 	
 	public String toString() {
@@ -24,4 +29,5 @@ public final class Salmon extends Pez {
 	
 		return descripcion;
 	}
+
 }
