@@ -12,7 +12,7 @@ public final class Limpiador extends Empleado {
 	
 	public void limpiarInstalacion(Instalacion unaInstalacion) {
 		unaInstalacion.setEstaLimpio(true);
-		System.out.println(nombreEmpleado + " ha limpiado " + nombreInstalacion);
+		System.out.println(nombreEmpleado + " ha limpiado " + unaInstalacion);
 	}
 	
 	public void limpiarAnimal(Animal unAnimal) {
