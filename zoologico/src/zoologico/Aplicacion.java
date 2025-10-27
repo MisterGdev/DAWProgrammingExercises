@@ -92,6 +92,9 @@ public class Aplicacion {
 		System.out.println("Se ha creado al limpiador " + nombreEmpleado);
 		System.out.println("Vamos a limpiar un Parque:");
 		unLimpiador.limpiarInstalacion(unParque);
+		
+		//EJEMPLOS CONSTANTES Y STATIC
+		System.out.println(unDelfin.MAX_NUMERO_PATAS);
 	}
 	
 	public static void main(String[] args) {

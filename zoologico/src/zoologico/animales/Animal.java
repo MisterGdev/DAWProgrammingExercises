@@ -2,6 +2,7 @@ package zoologico.animales;
 
 public abstract class Animal {
 	
+	public static final int MAX_NUMERO_PATAS = 4;
 	protected int numeroAletas;
 	protected int numeroPatas;
 	protected boolean tieneBranquias;
